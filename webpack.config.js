@@ -1,6 +1,6 @@
 const path = require('path');
 
-const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -14,12 +14,12 @@ module.exports = {
         test: /\.(js|jsx|ts|tsx)$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
-      }
-    ]
+      },
+    ],
   },
   plugins: [
     new HTMLWebpackPlugin({
-      template: './public/index.html'
+      template: './public/index.html',
     }),
     new CleanWebpackPlugin(),
   ],
@@ -28,5 +28,5 @@ module.exports = {
   },
   devServer: {
     port: 9000,
-  }
-}
+  },
+};
