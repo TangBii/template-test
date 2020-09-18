@@ -1,3 +1,6 @@
 module.exports = {
-  extends: 'eslint-config-ali/typescript/react',
+  "extends": "eslint-config-ali/typescript",
+  rules: {
+    "no-console": "off"
+  }
 }

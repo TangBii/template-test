@@ -1,7 +1,16 @@
 {
   "compilerOptions": {
-    "strict": true,
-    "esModuleInterop": true,
-    "jsx": "preserve",
-  }
+      "target": "es5",
+      "module": "CommonJS",
+      "strict": true,
+      "sourceMap": true,
+      "allowSyntheticDefaultImports": true,
+      "outDir": "./build",
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
